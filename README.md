@@ -10,7 +10,7 @@ This package is used as an extension to selenium chrome WebDriver. It contains s
 2. Shortcuts to control driver and element.
 
 
-## Samples
+## Examples
 
 - init chrome driver.
 
@@ -33,5 +33,18 @@ driver.wait_visible(xpath)
 driver.execute_script("return window.sessionStorage.getItem(arguments[0]);", key)
 
 // with easy-chrome
-driver.get_local_storage()
+driver.get_local_storage(key)
+```
+
+- wait username input field to be visible in DOM, clear the content and write username to it.
+```
+input_xpath = "//input[@id='username']
+
+// bare usage
+WebDriverWait(driver, wait_time).until(EC.visibility_of_element_located((By.XPATH, input_xpath)).clear()
+sleep(0.2)
+WebDriverWait(driver, wait_time).until(EC.visibility_of_element_located((By.XPATH, input_xpath)).sendkeys(username)
+
+// with easy-chrome
+driver.wait_visible(input_xpath).clear_and_type(user_name)
 ```
