@@ -16,7 +16,7 @@ This package is used as an extension to selenium chrome WebDriver. It contains s
 
 ```
 from easy_chrome import Driver
-driver = Driver.set_chrome(detach=True)
+driver = Driver.set_chrome(detach_mode=True)
 ```
 
 - wait an element located by XPATH to be visible in DOM.
