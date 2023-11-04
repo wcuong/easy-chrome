@@ -1,0 +1,8 @@
+*.exe
+*.spec
+.idea
+__pycache__
+Pipfile
+build
+dist
+push.sh
