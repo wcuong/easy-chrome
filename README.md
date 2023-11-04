@@ -48,3 +48,7 @@ WebDriverWait(driver, wait_time).until(EC.visibility_of_element_located((By.XPAT
 // with easy-chrome
 driver.wait_visible(input_xpath).clear_and_type(user_name)
 ```
+
+## Source Code
+The source code is currently hosted on GitHub at: https://github.com/wcuong/easy-chrome
+
