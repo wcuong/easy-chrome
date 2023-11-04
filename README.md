@@ -56,3 +56,8 @@ driver.wait_visible(input_xpath).clear_and_type(user_name)
 ## Source Code
 
 The source code is currently hosted on GitHub at: https://github.com/wcuong/easy-chrome
+
+
+## Release
+
+The package is currently hosted on Pypi at: https://pypi.org/project/easy-chrome/
