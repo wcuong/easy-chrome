@@ -6,3 +6,4 @@ Pipfile
 build
 dist
 push.sh
+easy_chrome.egg-info

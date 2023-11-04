@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="easy-chrome",
-    version="2.0.0",
+    version="2.0.1",
     author="VanCuong",
     author_email="vuvancuong94@gmail.com",
     description="selenium chrome extension with shortcuts to control driver and element",
@@ -16,8 +16,12 @@ setuptools.setup(
         'Operating System :: MacOS'
     ],
     license='MIT',
-    keywords='easy-chrome chrome_driver selenium chrome',
+    keywords='easy chrome chrome_driver selenium chromedriver',
     packages=setuptools.find_packages(),
-    install_requires=open('requirements.txt', 'r').readlines(),
-    python_requires=">=3.10",
+    install_requires=['selenium', 'webdriver-manager'],
+    python_requires=">=3.9",
+    long_description_content_type="text/markdown",
+    project_urls={
+        'Source': 'https://github.com/wcuong/easy-chrome',
+    },
 )

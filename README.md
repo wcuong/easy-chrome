@@ -20,6 +20,7 @@ driver = Driver.set_chrome(headless=True)
 ```
 
 - wait an element located by XPATH to be visible in DOM.
+
 ```
 // bare usage
 WebDriverWait(driver, wait_time).until(EC.visibility_of_element_located((By.XPATH, xpath))
@@ -27,7 +28,9 @@ WebDriverWait(driver, wait_time).until(EC.visibility_of_element_located((By.XPAT
 // with easy-chrome
 driver.wait_visible(xpath)
 ```
+
 - get local storage.
+
 ```
 // bare usage
 driver.execute_script("return window.sessionStorage.getItem(arguments[0]);", key)
@@ -37,6 +40,7 @@ driver.get_local_storage(key)
 ```
 
 - wait username input field to be visible in DOM, clear the content and write username to it.
+
 ```
 input_xpath = "//input[@id='username']
 
@@ -50,5 +54,6 @@ driver.wait_visible(input_xpath).clear_and_type(user_name)
 ```
 
 ## Source Code
+
 The source code is currently hosted on GitHub at: https://github.com/wcuong/easy-chrome
 
