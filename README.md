@@ -61,3 +61,12 @@ The source code is currently hosted on GitHub at: https://github.com/wcuong/easy
 ## Release
 
 The package is currently hosted on Pypi at: https://pypi.org/project/easy-chrome/
+
+
+## ChangeLog
+### 2.0.1 2023-11-04
+- Init project
+    
+### 2.0.2 2023-11-06
+- Change headless mode to --headless=new
+- Ignore DownloadBubble Feature, which enforces an download popup in incognito mode.

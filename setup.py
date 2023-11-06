@@ -1,8 +1,9 @@
 import setuptools
+import os
 
 setuptools.setup(
     name="easy-chrome",
-    version="2.0.1",
+    version="2.0.2",
     author="VanCuong",
     author_email="vuvancuong94@gmail.com",
     description="selenium chrome extension with shortcuts to control driver and element",
