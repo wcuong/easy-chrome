@@ -36,8 +36,9 @@ class Driver(webdriver.Chrome):
         """
         chrome_options = webdriver.ChromeOptions()
 
-        # headless mode or not
-        chrome_options.headless = headless
+        if headless:
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.add_argument("--headless=new")
 
         # add default experimental options
         chrome_options.add_experimental_option("excludeSwitches",
@@ -56,6 +57,7 @@ class Driver(webdriver.Chrome):
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument('--ignore-ssl-errors')
         chrome_options.add_argument('--disable-logging')
+        chrome_options.add_argument("--disable-features=DownloadBubble,DownloadBubbleV2")
 
         # add download directory
         if download_dir is not None:
