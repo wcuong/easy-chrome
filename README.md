@@ -70,3 +70,6 @@ The package is currently hosted on Pypi at: https://pypi.org/project/easy-chrome
 ### 2.0.2 2023-11-06
 - Change headless mode to --headless=new
 - Ignore DownloadBubble Feature, which enforces an download popup in incognito mode.
+
+### 2.0.3 2023-11-08
+- add custom windows chrome detect method because sometimes webdriver_manager fails to detect.
